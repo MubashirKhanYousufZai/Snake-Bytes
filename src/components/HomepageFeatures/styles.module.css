@@ -1,0 +1,41 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--ifm-background-color) 0%,
+    var(--ifm-background-surface-color) 100%
+  );
+}
+
+.featureSvg {
+  height: 180px;
+  width: 180px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.featureSvg:hover {
+  transform: translateY(-8px) scale(1.05);
+  opacity: 0.95;
+}
+
+/* Improve spacing inside feature cards */
+:global(.col) {
+  padding: 1.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 996px) {
+  .features {
+    padding: 3rem 0;
+  }
+
+  .featureSvg {
+    height: 150px;
+    width: 150px;
+  }
+}
