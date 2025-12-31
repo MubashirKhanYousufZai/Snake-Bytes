@@ -21,8 +21,10 @@
  * │   ├── layout-basics.md
  * │   ├── state-management.md
  * │
- * └── full-stack/
- *     └── connecting-the-dots.md
+ * ├── full-stack/
+ * │   └── connecting-the-dots.md
+ * │
+ * └── author.md
  */
 
 const sidebars = {
@@ -64,6 +66,12 @@ const sidebars = {
       items: [
         'full-stack/connecting-the-dots',
       ],
+    },
+
+    {
+      type: 'doc',
+      label: '👤 About the Author',
+      id: 'author',
     },
   ],
 };
